@@ -151,7 +151,7 @@ static const int GRID_COLUMNS = 10;
             Creature * creature = _gridArray[i][j];
             if(creature.livingNeighbors == 3)
                 creature.isAlive = true;
-            else //if (creature.livingNeighbors <= 1 || creature.livingNeighbors >=4)
+            else if (creature.livingNeighbors <= 1 || creature.livingNeighbors >=4)
                 creature.isAlive = false;
             //else{}
         }
